@@ -1,0 +1,6 @@
+D:\WWW\.NET\SMS\SMS.DB.Models\bin\Release\SMS.DB.Models.dll
+D:\WWW\.NET\SMS\SMS.DB.Models\bin\Release\SMS.DB.Models.pdb
+D:\WWW\.NET\SMS\SMS.DB.Models\obj\Release\SMS.DB.Models.csproj.AssemblyReference.cache
+D:\WWW\.NET\SMS\SMS.DB.Models\obj\Release\SMS.DB.Models.csproj.CoreCompileInputs.cache
+D:\WWW\.NET\SMS\SMS.DB.Models\obj\Release\SMS.DB.Models.dll
+D:\WWW\.NET\SMS\SMS.DB.Models\obj\Release\SMS.DB.Models.pdb

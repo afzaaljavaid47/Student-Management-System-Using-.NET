@@ -1,0 +1,68 @@
+﻿@model IEnumerable<SMS.DB.Students>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.f_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.className)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    @Html.Partial("_Item", item);
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.f_name)
+        </td>
+        <td>
+            @Html.Raw(item.address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.className)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+    <button onclick="getData()">Get data</button>
+
+</table>
+
+<script>
+    function getData(){
+        $.ajax({
+            url: "/Student/getStudents",
+            method: "GET",
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (err) {
+                console.log(err);
+            }
+            })
+    }
+</script>

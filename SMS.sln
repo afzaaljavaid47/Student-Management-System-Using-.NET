@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS", "SMS\SMS.csproj", "{5F3B9108-5DBB-42C8-9EA6-180D2B8DC2E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.DB", "SMS.DB\SMS.DB.csproj", "{8D346B73-7A5A-47A6-909A-583693608006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.DB.Models", "SMS.DB.Models\SMS.DB.Models.csproj", "{B3E36761-6839-4990-AE6E-282021B25687}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F3B9108-5DBB-42C8-9EA6-180D2B8DC2E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F3B9108-5DBB-42C8-9EA6-180D2B8DC2E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F3B9108-5DBB-42C8-9EA6-180D2B8DC2E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F3B9108-5DBB-42C8-9EA6-180D2B8DC2E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D346B73-7A5A-47A6-909A-583693608006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D346B73-7A5A-47A6-909A-583693608006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D346B73-7A5A-47A6-909A-583693608006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D346B73-7A5A-47A6-909A-583693608006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3E36761-6839-4990-AE6E-282021B25687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E36761-6839-4990-AE6E-282021B25687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E36761-6839-4990-AE6E-282021B25687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E36761-6839-4990-AE6E-282021B25687}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8538592-C899-40E7-9A95-F097DF884BEA}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,90 @@
+﻿@model SMS.DB.Models.StudentModel
+@{
+    ViewBag.Title = "Ajax";
+}
+
+<h2>Add a new Student</h2>
+@using (Ajax.BeginForm("Index", "Ajax", new AjaxOptions() { HttpMethod = "POST", OnSuccess = "fnSuccess", OnFailure = "fnFailure", LoadingElementId = "loading" }))
+{
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.f_name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.f_name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.f_name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.address, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.address, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.address, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.className, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.className, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.className, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+<div id="loading" style="display:none">
+    <h4>Loading.....</h4>
+</div>
+<script>
+    function fnSuccess(data) {
+        alert(data)
+        console.log(data);
+    }
+    function fnFailure(err) {
+        alert(err)
+        console.log(err)
+    }
+</script>
+@Ajax.ActionLink("All Students Data", "getStudents", new AjaxOptions()
+{
+                     UpdateTargetId = "Students",
+                     InsertionMode = InsertionMode.Replace,
+                     HttpMethod = "GET",
+                     LoadingElementId="loading",
+                     OnBegin="fnBegin",
+                     OnComplete="fnComplete"
+                 })
+
+<div id="Students">
+    
+</div>
+<div id="loading" style="display:none">
+    <h5>Loading .....</h5>
+</div>
+
+<script>
+    function fnBegin() {
+        document.getElementById("Students").innerText = "";
+    }
+    function fnComplete(data) {
+        var items = Newtonsoft.Json.JsonConvert.DeserializeObject < List < Students >> (data.responseJSON);
+        
+        console.log(items)
+    }
+</script>

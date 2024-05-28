@@ -1,0 +1,14 @@
+D:\WWW\.NET\SMS\SMS.DB\bin\Release\SMS.DB.dll.config
+D:\WWW\.NET\SMS\SMS.DB\bin\Release\SMS.DB.dll
+D:\WWW\.NET\SMS\SMS.DB\bin\Release\SMS.DB.pdb
+D:\WWW\.NET\SMS\SMS.DB\bin\Release\EntityFramework.dll
+D:\WWW\.NET\SMS\SMS.DB\bin\Release\EntityFramework.SqlServer.dll
+D:\WWW\.NET\SMS\SMS.DB\bin\Release\SMS.DB.Models.dll
+D:\WWW\.NET\SMS\SMS.DB\bin\Release\SMS.DB.Models.pdb
+D:\WWW\.NET\SMS\SMS.DB\bin\Release\EntityFramework.xml
+D:\WWW\.NET\SMS\SMS.DB\bin\Release\EntityFramework.SqlServer.xml
+D:\WWW\.NET\SMS\SMS.DB\obj\Release\SMS.DB.csproj.AssemblyReference.cache
+D:\WWW\.NET\SMS\SMS.DB\obj\Release\SMS.DB.csproj.CoreCompileInputs.cache
+D:\WWW\.NET\SMS\SMS.DB\obj\Release\SMS.DB.csproj.CopyComplete
+D:\WWW\.NET\SMS\SMS.DB\obj\Release\SMS.DB.dll
+D:\WWW\.NET\SMS\SMS.DB\obj\Release\SMS.DB.pdb
